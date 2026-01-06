@@ -8,28 +8,34 @@ const Contact = () => {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("Sending...");
+  event.preventDefault();
+  setResult("Sending...");
 
-    const formData = new FormData(event.target);
+  const formData = new FormData(event.target);
 
-    formData.append("access_key", "061db0b0-25d7-4571-91e3-86467214553d");
+  formData.append("access_key", "061db0b0-25d7-4571-91e3-86467214553d");
 
+  try {
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData
-    }).then(res => res.json());
+    });
 
-    const data = await response.json();
+    const data = await response.json(); // only once
 
     if (data.success) {
-      setResult("Message sent successfully");
+      setResult("Message sent successfully!");
       event.target.reset();
     } else {
-      setResult("Something went wrong");
+      setResult("Something went wrong.");
       console.log(data);
     }
-  };
+  } catch (error) {
+    console.error(error);
+    setResult("An error occurred while sending the message.");
+  }
+};
+
 
   return (
     <div className="contact">
