@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import "./WaterRipple.css";
-import logo from '../../Assets/logo1.png';
+import logo from '../../assets/logo1.png';
 
 export default function WaterRipple({ onFinish }) {
   const canvasRef = useRef(null);
