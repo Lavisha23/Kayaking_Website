@@ -55,12 +55,12 @@ const Contact = () => {
         <ul>
           <li>
             <img src={phone} alt="" />
-            <strong>Phone:</strong> &nbsp;<a href="tel:+91 9739465315">+91 9739465315</a>, <a href="tel:+91 7760020966">&nbsp;+91 7760020966</a>
+            <a href="tel:+91 9739465315">+91 9739465315</a>, <a href="tel:+91 7760020966">&nbsp;+91 7760020966</a>
           </li>
 
           <li>
             <img src={msg} alt="" />
-            <strong>Email:</strong>&nbsp;<a href="mailto:thewanderingsoul10@gmail.com">thewanderingsoul10@gmail.com</a>
+            <a href="mailto:thewanderingsoul10@gmail.com">thewanderingsoul10@gmail.com</a>
           </li>
 
           <li>
