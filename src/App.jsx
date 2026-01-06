@@ -8,7 +8,7 @@ import Gallery from './Components/Gallery/Gallery'
 import Location from './Components/Location/Location'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
-import WaterRipple from './Components/WaterRlpple/WaterRipple'
+import WaterRipple from './Components/WaterRIpple/WaterRipple'
 import { useState } from 'react'
 const App = () => {
    const [showSplash, setShowSplash] = useState(true);
