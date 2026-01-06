@@ -1,0 +1,111 @@
+nav {
+    width: 100%;
+    padding: 10px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease;
+}
+
+/* Sticky background */
+.dark-nav {
+    background: #ec8a29;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    max-width: 100%;
+}
+
+/* Desktop menu */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links li {
+    list-style: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Button */
+.btn {
+    background: white;
+    color: #ec8a29;
+    padding: 10px 22px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Menu icon */
+.menu-icon {
+    display: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 840px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -260px;
+        width: 260px;
+        height: 100vh;
+        background: #ec8a29;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 90px;
+        transition: right 0.35s ease;
+        z-index: 999;
+    }
+
+    /* When menu is open */
+    .nav-links.show {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 18px 0;
+        font-size: 18px;
+    }
+
+    .btn {
+        margin-top: 15px;
+        padding: 10px 20px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 400px) {
+    .logo {
+        width: 65px;
+    }
+
+    .nav-links {
+        width: 220px;
+    }
+
+    .nav-links li {
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,98 @@
+.resort {
+  margin: 50px auto;
+  width: 90%;
+  text-align: center;
+}
+
+/* Gallery row */
+.gallery {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 350px;       /* Bigger images */
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* View More button */
+.view-more {
+  margin-top: 30px;
+}
+
+.view-more button {
+  background: #ec8a29;
+  color: white;
+  padding: 15px 35px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.view-more button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Lightbox overlay */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* Image in lightbox */
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  transition: transform 0.15s ease;
+  cursor: zoom-in;
+  border-radius: 12px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .view-more button {
+    width: 60%;
+    font-size: 16px;
+  }
+}
