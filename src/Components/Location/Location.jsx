@@ -17,7 +17,6 @@ const Location = () => {
 
            <p>
             <strong>Phone:</strong>
-            <a href="tel:+919739465315">&nbsp;+91 9739465315, </a>
             <a href="tel:+917760020966">+91 7760020966</a>
           </p>
 

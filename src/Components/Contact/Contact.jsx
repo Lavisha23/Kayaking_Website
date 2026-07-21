@@ -55,7 +55,7 @@ const Contact = () => {
         <ul>
           <li>
             <img src={phone} alt="" />
-            <a href="tel:+91 9739465315">+91 9739465315</a>, <a href="tel:+91 7760020966">&nbsp;+91 7760020966</a>
+            <a href="tel:+91 7760020966">+91 7760020966</a>
           </li>
 
           <li>

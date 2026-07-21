@@ -9,8 +9,15 @@ import pic5 from '../../assets/pic5.jpeg';
 import img3 from '../../assets/img3.jpeg';
 import pic6 from '../../assets/pic6.jpeg';
 import pic7 from '../../assets/pic7.jpeg';
+import pic11 from '../../assets/pic11.jpeg';
+import pic12 from '../../assets/pic12.jpeg';
+import pic13 from '../../assets/pic13.jpeg';
+import pic14 from '../../assets/pic14.jpeg';
+import pic15 from '../../assets/pic15.jpeg';
+import pic16 from '../../assets/pic16.jpeg';
 
-const images = [pic1, pic2, pic3, pic4, pic5, img3, pic6, pic7];
+
+const images = [pic1, pic2, pic3, pic4, pic5, img3, pic6, pic7, pic11, pic12, pic13, pic14, pic15, pic16];
 
 const Gallery = () => {
   const [showAll, setShowAll] = useState(false);
